@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: kr-eureak
+  #注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureak
+      #是否将注册中心也注册为 微服务
+    register-with-eureka: false
+    # 配置高可用时，注册中心互相抓取微服务信息
+    fetch-registry: false
+    #dev 关闭注册中心的自我保护模式
+  server:
+    enable-self-preservation: false
