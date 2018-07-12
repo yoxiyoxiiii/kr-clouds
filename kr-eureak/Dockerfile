@@ -1,6 +1,6 @@
 FROM java:8
 
-RUN apt-get update && apt-get install -y maven openjdk-8-jdk
+RUN apt-get update && apt-get install -y maven openjdk-7-jdk
 
 RUN mvn package && cp -rf ~/java/target/*.jar /
 
