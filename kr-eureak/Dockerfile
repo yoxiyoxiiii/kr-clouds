@@ -2,7 +2,7 @@ FROM java:8
 
 RUN apt-get update && apt-get install -y maven openjdk-7-jdk
 
-RUN mvn package && cp -rf ~/java/target/*.jar /
+RUN mvn package
 
 EXPOSE 8761
 
